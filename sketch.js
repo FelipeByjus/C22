@@ -79,7 +79,7 @@ function draw() {
       if(swordGroup.isTouching(boy)) {
         gameState=END;
        
-        
+        boy.destroy();
         cashG.destroyEach();
         diamondsG.destroyEach();
         jwelleryG.destroyEach();
@@ -149,3 +149,4 @@ function createSword(){
   swordGroup.add(sword);
   }
 }
+
